@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Zoo</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="assets/icon/themify-icons/themify-icons.css">
+    <script src="https://kit.fontawesome.com/852f932aca.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main"> 
+        <div id="header">
+             <ul id="nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#timee">TIME</a></li>
+                <li><a href="#sensor">SENSOR</a></li>
+                <li><a href="#buttonn">BUTTON</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+             </ul> 
+             <div class="search-button">
+                <i class="search-icon ti-search"></i>
+             </div>
+        </div>
+        
+        <div id="home">
+
+        </div>
+        <!--Time,day-->
+        <div id="timee" class="time-section">
+            <div id="content">
+                <div class="content-section">
+                    <h2 class="time-heading text-white ">TIME</h2>
+                    <p class="time-sub-heading text-white ">Exact date and time</p>
+                </div>    
+            </div>
+        <div class="timeset">
+            <div id="time">
+                <script>
+                function dongho() {
+                var time = new Date();
+                var gio = time.getHours();
+                var phut = time.getMinutes();
+                var giay = time.getSeconds();
+                if (gio < 10) 
+                gio = "0" + gio;
+                if (phut < 10) 
+                phut = "0" + phut;
+                if (giay < 10) 
+                giay = "0" + giay;
+                document.getElementById("time").innerHTML = gio + ":" + phut + ":" + giay;
+                setTimeout("dongho()", 1000);
+                };
+                dongho();
+                </script>
+                </div>
+            </div>
+        </div>
+<!--Sensor-->
+<div id="sensor">
+    <div id="content">
+        <div class="content-section">
+            <h2 class="section-heading">SENSOR</h2>
+            <p class="section-sub-heading">Measurable parameters</p>
+            <div class="sensor-list">
+            <div class="sensor-item">
+                <p class="sensor-name">Temperature</p>
+                <img style="width: 150px;" src="./slider/nhietke.png" alt="Temperature" class="sensor-img">
+                <h1 style="margin-top: 28px;" id="temperature"></h1>
+            </div>
+            <div class="sensor-item">
+                <p class="sensor-name">Humidity</p>
+                <img src="./slider/doam1.png" alt="Humidity" class="sensor-image" >
+                <h1 style="margin-top: 37px;" id="humidity"></h1>
+            </div>
+            <div class="sensor-item">
+                <p class="sensor-name">Rain</p>
+                <img src="./slider/luongmua2.jpg" alt="Rain" class="sensor-ima">
+                <h1 style="margin-top: 38px;" id="rain"></h1>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+<!--Button-->
+    <div id="buttonn" class="button-section">
+        <div id="content">
+            <div class="content-section">
+                <h2 class="section-heading text-white">BUTTON</h2>
+                <p class="section-sub-heading text-white">Put</p>
+               
+        
+            <div class="button">
+            <div class="button-item">
+                <div class="button-padding1">
+                <p class="button-name text-white">Gate</p>
+                <img src="./slider/wardrobe-removebg-preview.png" alt="gate" id="gate">
+        
+            <button type="button" id="btn1" >On</button>
+            <button type="button" id="btn2" >Off</button><br><br>
+            
+        </div>
+        </div>
+            <div class="button-item">
+                <div class="button-padding2">
+                <p class="button-name text-white">Light</p>
+                <img src="./slider/den1.png" alt="lamping" id="led">
+                
+            <button type="button" id="btn3" >On</button>
+            <button type="button" id="btn4" >Off</button><br><br>
+        
+        </div>
+            </div>
+            <div class="button-item">
+                <div class="button-padding3">
+                <p class="button-name text-white">Siren</p>
+                <img src="./slider/zyro-image.png" alt="siren" id="siren">
+               
+                <button type="button" id="btn5" >On</button>
+                <button type="button" id="btn6" >Off</button><br><br>
+              
+            </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>   
+<!--Contact--> <div id="footer">
+<div id="contact">  
+    <div id="content">
+        <div class="content-section">
+            <h2 class="section-heading">CONTACT</h2>
+            <p class="section-sub-heading">Basic information phone number, email</p>
+        <div class="row">
+            <div class="col-cold">
+             
+                <p><i class="fa-solid fa-location-dot">  TP.HCM</i></p>
+                <br>
+                <p><i class="fa-solid fa-phone"> 0347566062</i></p>
+                <br>
+                <p><i class="fa-solid fa-phone"> 0906607710</i></p>
+                <br>
+                <p><i class="fa-solid fa-envelope"> 20119124@student.hcmute.edu.vn</i></p>
+                <br>
+                <p><i class="fa-solid fa-envelope"> 20119128@student.hcmute.edu.vn</i></p>
+                <br>
+                <p><i class="fa-solid fa-signature"> LE DUY DAT </i></p>
+                <br>
+                <p><i class="fa-solid fa-signature"> VU VAN DUC </i></p>
+            </div>
+        </div>
+        </div>   
+    </div>  
+</div>
+
+<div class="social-list">
+
+<a href="https://www.facebook.com/profile.php?id=100006144256895"><i class="fa-brands fa-square-facebook"></i></a>
+<a href=""><i class="fa-brands fa-instagram"></i></a>
+<a href=""><i class="fa-brands fa-youtube"></i></a>
+<a href=""><i class="fa-brands fa-github"></i></a>
+
+</div>        
+</div>
+</div>
+<script src="function.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+<script>
+    var firebaseConfig = {
+  apiKey: "AIzaSyBr8fYeIhnJdLPZJUSR0pYEvoChZP7Y_Oc",
+  authDomain: "iotproject2023-fef7f.firebaseapp.com",
+  databaseURL: "https://iotproject2023-fef7f-default-rtdb.firebaseio.com",
+  projectId: "iotproject2023-fef7f",
+  storageBucket: "iotproject2023-fef7f.appspot.com",
+  messagingSenderId: "676406899135",
+  appId: "1:676406899135:web:71872096a1faa5760a310a",
+  measurementId: "G-6M0R54C87P"
+};
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+
+
+
+<script>
+
+var temperatureElement = document.getElementById("temperature");
+var humidityElement = document.getElementById("humidity");
+var rainElement = document.getElementById("rain");
+
+var temperature = document.getElementById('temperature');
+var dbRef = firebase.database().ref().child('temperature');
+dbRef.on('value', function(snap) {
+  var tempValue = parseFloat(snap.val()).toFixed(2);
+  temperature.innerText = tempValue + "°C";
+  
+  if (tempValue > 31.00) {
+    alert(" Warning ! The temperature is too hot, give the animal water.");
+    img3.src = 'slider/DelayedVacantDassie-max-1mb.gif' ;
+    firebase.database().ref("device3").set({siren:1});
+  }
+  else{
+    img3.src = 'slider/zyro-image.png';
+    firebase.database().ref("device3").set({siren:0});
+  }
+});
+
+
+var humidityRef = firebase.database().ref("humidity");
+humidityRef.on('value', function(snapshot) {
+humidityElement.innerHTML =  snapshot.val() + " %";
+});
+
+
+var rainRef = firebase.database().ref("rain-status");
+rainRef.on('value', function(snapshot) {
+rainElement.innerHTML =  snapshot.val() ;
+});
+
+</script>   
+</body> 
+</html>

@@ -1,0 +1,267 @@
+/* Global Styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth; /* Smooth scrolling behavior */
+}
+
+/* Helper Classes */
+.clear{
+    clear: both;
+}
+.text-white{
+    color: #fff !important; /* Text color override */
+}
+
+/* Header Styles */
+#header {
+    height: 46.5px;
+    background-color: #0e8e45;
+    position: fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+#header .search-button {
+    float: right;
+    padding: 0 16px;
+    cursor: cell;
+}
+#header .search-button:hover{
+    background-color: #f44336;
+}
+#header .search-icon {
+    color: #ccc;
+    font-size: 18px;
+    line-height: 46.5px;
+}
+
+/* Navigation Styles */
+#nav, 
+.subnav{
+    list-style: none;
+    display: inline-block;
+    font-style: normal;
+}
+#nav li {
+    position: relative;
+}
+#nav > li {
+    display: inline-block;
+}
+#nav li a{
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: block;
+}
+#nav > li > a{
+    color: #ccc;
+    text-transform: uppercase;
+}
+#nav li:hover .subnav {
+    display: block; /* Subnav appears on hover */
+}
+#nav .subnav{
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgb(0,0, 0.5);
+    display: none;
+}
+#nav .subnav a{
+    color: #16e16e;
+}
+#nav .nav-arrow-down{
+    font-size: 13px;
+    padding: 0 6px;
+    line-height: 38px;
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a{
+color: #000;
+background-color: #ccc; /* Background color changes on hover */
+}
+
+/* Home Section Styles */
+#home {
+    margin-top: 46.5px;
+    padding-top: 50%;
+    background: url("./slider/31084.jpg") center / cover no-repeat; /* Centered and cover image */
+    padding-bottom: 100px;
+}
+
+/* Time Section Styles */
+.time-section{
+    background-image:url("./slider/nai.jpg");
+    padding-bottom: 500px;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+h2.time-heading{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 4px;
+}
+.time-sub-heading{
+    font-size: 15px;
+    margin-top: 10px;
+    font-style: italic;
+    opacity: 60%;
+    text-align: center;
+}
+.timeset{
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    opacity: 40%;
+}
+
+/* Content Section Styles */
+#content .content-section{
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 24px;
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    margin-top: 10px;
+    font-style: italic;
+    opacity: 60%;
+    text-align: center;
+}
+#content .about-text{
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    margin-top: 20px;
+}
+#content .sensor-list{
+    overflow: hidden;
+}
+#content .sensor-item{
+    float: left;
+    margin-top: 40px;
+    width: 33.333333%;
+    text-align: center;
+    padding-bottom: 200px;
+}
+#content .sensor-name{
+    font-size: 18px;
+}
+#content .sensor-img,
+#content .sensor-image,
+#content .sensor-ima {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+/* Button Section Styles */
+.button-section{
+    padding-bottom: 510px;
+    background-image: linear-gradient(135deg, #4ed6c4, #c8e31a);
+}
+.button-item{
+    float: left;
+    text-align: center;
+    width: 33.33333%;
+    color: #fff;
+    margin-top: 150px;
+    padding: 20px;
+    color: #fff;
+    font-style: italic;
+}
+.button-padding1,
+.button-padding2,
+.button-padding3{
+    padding: 20px;
+    background-color: #81e5fc;
+    transition: 0.5s;
+    border-radius: 20px;
+    padding-bottom: 50px;
+}
+.button-padding1:hover,
+.button-padding2:hover,
+.button-padding3:hover{
+    background-color: #a9eef7;
+    padding-bottom: 50px;
+}
+.button1,
+.button2, 
+.button3 {
+    margin-top: 20px;
+}
+#btn1,#btn2,#btn3,#btn4,#btn5,#btn6 {
+    border: none;
+    float: left;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 2px;
+    cursor: pointer;
+    background-image: linear-gradient(135deg, #008aff, #86d472);
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+.button-item:hover {
+    transform: scale(1.1, 1.1); /* Button item scales up on hover */
+}
+.col-cold{
+    font-size: 18px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+/* Footer Styles */
+#footer{
+    background-color: #ffff00; 
+    animation: rainbow 10s linear infinite; /* Animated rainbow colors */
+    padding: 20px 40px;
+    text-align: center;
+    font-size: 24px;
+    opacity: 0.6;
+} 
+
+@keyframes rainbow { 
+    0%{background-color: #FF0000;} 
+    14.28%{background-color: #FF7F00;} 
+    28.56%{background-color: #FFFF00;} 
+    42.84%{background-color: #00FF00;} 
+    57.12%{background-color: #0000FF;} 
+    71.40%{background-color: #4B0082;} 
+    85.68%{background-color: #8F00FF;} 
+    100%{background-color: #FF0000;} 
+}
+#footer .social-list a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.9);
+}
+#footer .social-list :hover{
+    color: rgba(0,0,0,0.6);
+}
